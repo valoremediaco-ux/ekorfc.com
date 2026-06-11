@@ -3,8 +3,59 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ekor FC, Junior & Youth Soccer Coaching + Field Rentals in Orlando</title>
-<meta name="description" content="Junior and youth soccer coaching for ages 5-15, plus quality field rentals. Coached by ex-pro players in Alafaya, Orlando. First two sessions free." />
+<title>Ekor FC | Alafaya Orlando Kids Soccer Academy & Field Rentals</title>
+<meta name="description" content="Ekor FC is a kids and youth soccer academy in Alafaya, Orlando FL. Pro coaching for ages 5-15, all skill levels. First two sessions free. Soccer field rentals by the hour for teams, leagues & tournaments." />
+<meta name="keywords" content="Alafaya soccer academy, Orlando soccer academy, Orlando kids soccer, youth soccer Orlando, soccer school Orlando, soccer classes Alafaya, soccer training for kids Orlando, soccer field rental Orlando, soccer field rental Alafaya, rent soccer field Orlando, youth soccer coaching Florida, soccer lessons Orlando, kids sports Orlando, 11v11 9v9 7v7 field rental, soccer tournaments Orlando" />
+<meta name="author" content="Ekor Futbol Club" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://ekorfc.com/" />
+
+<!-- Open Graph (Facebook, WhatsApp, iMessage previews) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ekor FC | Alafaya Orlando Kids Soccer Academy & Field Rentals" />
+<meta property="og:description" content="Pro soccer coaching for kids ages 5-15 in Alafaya, Orlando. First two sessions free. Plus soccer field rentals by the hour." />
+<meta property="og:url" content="https://ekorfc.com/" />
+<meta property="og:image" content="https://ekorfc.com/assets/images/ekor-logo.png" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Ekor FC" />
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ekor FC | Alafaya Orlando Kids Soccer Academy & Field Rentals" />
+<meta name="twitter:description" content="Pro soccer coaching for kids ages 5-15 in Alafaya, Orlando. First two sessions free. Plus soccer field rentals by the hour." />
+<meta name="twitter:image" content="https://ekorfc.com/assets/images/ekor-logo.png" />
+
+<!-- Local Business structured data (helps Google show you in local/maps results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Ekor FC - Ekor Futbol Club",
+  "description": "Kids and youth soccer academy and soccer field rentals in Alafaya, Orlando FL. Pro coaching for ages 5-15, all skill levels welcome. First two sessions free.",
+  "url": "https://ekorfc.com",
+  "logo": "https://ekorfc.com/assets/images/ekor-logo.png",
+  "image": "https://ekorfc.com/assets/images/ekor-logo.png",
+  "telephone": "+1-956-662-5168",
+  "foundingDate": "2026",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "14220 Thamhall Way",
+    "addressLocality": "Orlando",
+    "addressRegion": "FL",
+    "postalCode": "32828",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Alafaya", "Orlando", "Waterford Lakes", "East Orlando", "Avalon Park", "Union Park"],
+  "knowsLanguage": ["en", "es"],
+  "sameAs": [
+    "https://www.instagram.com/ekor_fc/",
+    "https://www.tiktok.com/@ekor_fc",
+    "https://www.facebook.com/share/17ZHMWNHid/"
+  ],
+  "openingHours": "We,Fr,Sa 17:00-19:00",
+  "priceRange": "$$"
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -659,6 +710,7 @@
     margin-bottom: 64px;
   }
   .field-card {
+    display: block;
     background: var(--black-2);
     border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 0;
@@ -666,10 +718,12 @@
     overflow: hidden;
     transition: transform 0.3s, border-color 0.3s;
     position: relative;
+    color: inherit;
+    cursor: pointer;
   }
   .field-card:hover {
     transform: translateY(-6px);
-    border-color: rgba(244, 180, 0, 0.3);
+    border-color: rgba(244, 180, 0, 0.5);
   }
   .field-card-header {
     padding: 28px 28px 0;
@@ -704,6 +758,20 @@
     font-weight: 600;
   }
   .field-promo strong { font-weight: 800; }
+  .field-book-prompt {
+    margin-top: 20px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.65;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .field-card:hover .field-book-prompt {
+    opacity: 1;
+    transform: translateX(4px);
+  }
 
   .reserve-cta {
     background: var(--gold);
@@ -1112,16 +1180,16 @@
   <div class="nav-inner">
     <a href="#" class="logo">
       <img src="assets/images/ekor-logo.png" alt="Ekor Futbol Club logo" />
-      <div class="logo-text">EKOR FC<span>Orlando, Est. 2026</span></div>
+      <div class="logo-text">EKOR FC<span>Orlando Kids Soccer Academy</span></div>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#">Home</a></li>
       <li><a href="#approach">Our Approach</a></li>
       <li><a href="#academy">Academy</a></li>
-      <li><a href="#fields">Fields</a></li>
+      <li><a href="#fields">Field Rentals</a></li>
       <li><a href="#about">Our Story</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#enroll" class="nav-cta">Free Session</a></li>
+      <li><a href="https://app.squareup.com/appointments/buyer/widget/cdxnwrkpaxh1dg/L05YM2T4V07CH" target="_blank" class="nav-cta">Free Session</a></li>
     </ul>
     <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
   </div>
@@ -1234,7 +1302,7 @@
         <h3>Start With Two Free Sessions</h3>
         <p>New players get their first two sessions free. Reach out to claim your spot, no payment needed.</p>
       </div>
-      <a href="#contact" class="academy-cta-btn">Claim Free Sessions →</a>
+      <a href="https://app.squareup.com/appointments/buyer/widget/cdxnwrkpaxh1dg/L05YM2T4V07CH" target="_blank" class="academy-cta-btn">Claim Free Sessions →</a>
     </div>
   </div>
 </section>
@@ -1280,33 +1348,36 @@
     </div>
 
     <div class="field-cards">
-      <div class="field-card">
+      <a href="https://app.squareup.com/appointments/buyer/widget/7zkci3rwvkdrgm/L05YM2T4V07CH" target="_blank" class="field-card">
         <div class="field-card-header">
           <div class="field-card-format">11<span class="accent">v</span>11</div>
         </div>
         <div class="field-card-body">
           <div class="field-price-main">$140 <span>/ hour</span></div>
           <div class="field-promo"><strong>Save $30</strong> · $250 for 2 hours</div>
+          <div class="field-book-prompt">Book this field →</div>
         </div>
-      </div>
-      <div class="field-card">
+      </a>
+      <a href="https://app.squareup.com/appointments/buyer/widget/7zkci3rwvkdrgm/L05YM2T4V07CH" target="_blank" class="field-card">
         <div class="field-card-header">
           <div class="field-card-format">9<span class="accent">v</span>9</div>
         </div>
         <div class="field-card-body">
           <div class="field-price-main">$100 <span>/ hour</span></div>
           <div class="field-promo"><strong>Save $40</strong> · $160 for 2 hours</div>
+          <div class="field-book-prompt">Book this field →</div>
         </div>
-      </div>
-      <div class="field-card">
+      </a>
+      <a href="https://app.squareup.com/appointments/buyer/widget/7zkci3rwvkdrgm/L05YM2T4V07CH" target="_blank" class="field-card">
         <div class="field-card-header">
           <div class="field-card-format">7<span class="accent">v</span>7</div>
         </div>
         <div class="field-card-body">
           <div class="field-price-main">$80 <span>/ hour</span></div>
           <div class="field-promo"><strong>Save $10</strong> · $150 for 2 hours</div>
+          <div class="field-book-prompt">Book this field →</div>
         </div>
-      </div>
+      </a>
     </div>
 
     <!-- SQUARE BOOKING WIDGET -->
@@ -1501,7 +1572,7 @@
       <div class="footer-brand">
         <a href="#" class="logo">
           <img src="assets/images/ekor-logo.png" alt="Ekor Futbol Club logo" />
-          <div class="logo-text">EKOR FC<span>Orlando, Est. 2026</span></div>
+          <div class="logo-text">EKOR FC<span>Orlando Kids Soccer Academy</span></div>
         </a>
         <p>Junior and youth soccer coaching + quality field rentals. Built by ex-pros, made for the community, set in Orlando.</p>
         <div class="footer-socials">
