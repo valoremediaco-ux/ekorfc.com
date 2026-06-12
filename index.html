@@ -685,7 +685,42 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 64px;
+  }
+  .field-photo-banner {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/6;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 64px;
+    background: url('https://images.unsplash.com/photo-1556056504-5468227aa6c5?w=1920&auto=format&fit=crop') center/cover;
+  }
+  .field-photo-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.2) 50%, rgba(10,10,10,0.6) 100%);
+  }
+  .field-photo-banner-text {
+    position: absolute;
+    left: 40px;
+    bottom: 32px;
+    z-index: 1;
+  }
+  .field-photo-banner-text .eyebrow {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .field-photo-banner-text h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(28px, 4vw, 48px);
+    line-height: 1;
+    color: var(--white);
   }
   .feature {
     text-align: left;
@@ -1166,6 +1201,8 @@
     .footer-grid { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
     .founders { grid-template-columns: 1fr; }
+    .field-photo-banner { aspect-ratio: 4/5; }
+    .field-photo-banner-text { left: 24px; bottom: 24px; right: 24px; }
     .floating-call { display: flex; }
     .booking-header, .square-widget-wrap, .booking-fallback { padding: 24px 20px; }
     .booking-fallback { flex-direction: column; align-items: flex-start; gap: 16px; }
@@ -1355,6 +1392,13 @@
       </div>
     </div>
 
+    <div class="field-photo-banner">
+      <div class="field-photo-banner-text">
+        <div class="eyebrow">Alafaya, Orlando</div>
+        <h3>Lit, Lined, Ready When You Are.</h3>
+      </div>
+    </div>
+
     <div class="field-cards">
       <a href="https://app.squareup.com/appointments/buyer/widget/7zkci3rwvkdrgm/L05YM2T4V07CH" target="_blank" class="field-card">
         <div class="field-card-header">
@@ -1427,7 +1471,7 @@
       <div class="step">
         <div class="step-num">03</div>
         <h4>Join the Club</h4>
-        <p>Continue with a monthly membership, 3 sessions a week included. Cancel anytime, we earn the next month.</p>
+        <p>Continue with a monthly membership, 3 sessions a week included. Cancel anytime.</p>
       </div>
       <div class="step">
         <div class="step-num">04</div>
